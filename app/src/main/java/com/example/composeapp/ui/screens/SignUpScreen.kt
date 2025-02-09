@@ -252,7 +252,7 @@ fun SingUpContent(navController: NavHostController, authViewModel: AuthViewModel
                         popUpTo(Screen.Login.route) { inclusive = true }
                         launchSingleTop = true
                     }
-                 authViewModel.signup(email,password)
+                 authViewModel.signup(name = name,email = email, password = password)
                 },
                     colors = ButtonColors(
                         containerColor = Color.Blue,
